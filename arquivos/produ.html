@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>]
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="/arquivos/styles.css">
+<link rel="stylesheet" href="/arquivos/produ.css">
+<link rel="stylesheet" href="/arquivos/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta name="title" content="Florescer">
+    <meta name="description" content="">
+    <title>Produtos</title>
+</head>
+<body>
+      <!--MENU-->
+  
+<header>
+    <a href="#" class="logo">Florescer</a>
+    
+    <nav class="navbar" id="menu">
+        <a href="/arquivos/index.html">Home</a>
+        <a class="active" href="#produ">Produtos</a>
+        <a href="/arquivos/index.html">Sobre Nós</a>
+        <a href="/arquivos/index.html">Serviços</a> 
+    </nav>
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <i class="fas fa-shopping-cart" id="cart-icon" data-quantity="0"></i>
+     
+    <!--CARRINHO-->
+   <div class="cart">
+    <h2 class="cart-title">Carrinho</h2>
+    <div class="cart-content">
+       
+    </div>
+        <div class="total">
+            <div class="total-title">Total:</div>
+            <div class="total-price">R$00.00</div>
+        </div>
+        <button type="button" class="btn-buy">Comprar</button>
+        <i class="fas fa-times" id="close-cart"></i>
+  
+   </div>
+ 
+</header>
+
+
+<!--BARRA DE PESQUISA-->
+
+<form action="" id="search-form">
+    <div class="search-container">
+        <input type="search" placeholder="O que você busca?" id="search-box">
+    
+        <i class="fas fa-times" type="button" id="close"></i>
+        <i class="fas fa-search" id="search-button"></i>
+        <ul id="search-results" class="search-results"></ul>
+    </div>
+</form>
+ <section class="produ shop container" id="">
+    <h3 class="sub-heading"><a href="index.html">Início > Produtos</a></h3>
+
+    <section class="filter-container">
+        <button class="filter-btn" onclick="filterItems('all')">Todos</button>
+        <button class="filter-btn" onclick="filterItems('shakes')">Shakes</button>
+        <button class="filter-btn" onclick="filterItems('capsulas')">Cápsulas</button>
+        <button class="filter-btn" onclick="filterItems('oleos')">Óleos</button>
+        <button class="filter-btn" onclick="filterItems('chá')">Chás</button>
+        <button class="filter-btn" onclick="filterItems('semente')">Sementes</button>
+    </section>
+    <!--PRODUTOS-->
+    <div class="box-container shop-content" id="product-list">
+        <div class="box product-box oleos">
+           
+            <img src="/img/oleo de alho.jpg" alt="" class="product-img">
+            <h3 class="product-title">Óleo de Alho</h3>
+            <p class="product-p">1 frasco c/60caps. de 250mg</p>
+            
+            <span class="price">R$32,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+
+        <div class="box product-box oleos">
+           
+            <img src="/img/oleo de coco.webp" alt="" class="product-img">
+            <h3 class="product-title">Óleo de Coco</h3>
+            <p class="product-p">1 frasco c/60 caps. de 1000mg</p>
+          
+            <span class="price">R$37,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+
+        <div class="box product-box oleos">
+            
+            <img src="/img/oleo de linhaca.jpg" alt="" class="product-img">
+            <h3 class="product-title">Óleo de Linhaça</h3>
+            <p class="product-p">1 frasco c/60 caps. de 500mg</p>
+           
+            <span class="price">R$37,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+
+        <div class="box product-box oleos">
+          
+            <img src="/img/oleo de primula.webp" alt="" class="product-img">
+            <h3 class="product-title">Óleo de Primulal</h3>
+           <p class="product-p">1 frasco c/60 caps. de 500mg</p>
+            <span class="price">R$37,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box oleos">
+           
+            <img src="/img/oleo oleo groselha negra.jpg" alt="" class="product-img">
+            <h3 class="product-title">Óleo de Groselha Negra</h3>
+            <p class="product-p">1 frasco c/60 caps. de 1000mg</p>
+          
+            <span class="price">R$37,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box semente">
+            <img src="/img/linhaça-semente.webp" alt="Whey protein Baunilha" class="product-img">
+            <h3 class="product-title">Linhaça <span>(Marrom e Dourada)</span></h3>
+            <p class="product-p">500 Gramas</p>
+            <span class="price">R$24,50</span>
+            <button class="add-cart">Comprar</button>
+        </div>
+      
+        <div class="box product-box semente">
+            <img src="/img/chia-semente.jpg" alt="Whey protein Baunilha" class="product-img">
+            <h3 class="product-title">Chia</h3>
+            <p class="product-p">500 Gramas</p>
+            <span class="price">R$24,50</span>
+            <button class="add-cart">Comprar</button>
+        </div>
+        <div class="box product-box semente">
+            <img src="/img/levedo de cerveja.jpg" alt="Whey protein Baunilha" class="product-img">
+            <h3 class="product-title">Levedo de Cerveja</h3>
+            <p class="product-p">200 Gramas</p>
+            <span class="price">R$10,50</span>
+            <button class="add-cart">Comprar</button>
+        </div>
+        <div class="box product-box shakes">
+            <img src="/img/shake-baun.jpg" alt="Whey protein Baunilha" class="product-img">
+            <h3 class="product-title">Whey protein/ Baunilha</h3>
+            <p class="product-p">1 pote c/900g</p>
+            <span class="price">R$45,50</span>
+            <button class="add-cart">Comprar</button>
+        </div>
+
+        <div class="box product-box shakes">
+            <img src="/img/shake-choc.jpg" alt="Whey protein Chocolate" class="product-img">
+            <h3 class="product-title">Whey protein/ Chocolate</h3>
+            <p class="product-p">1 pote c/900g</p>
+            <span class="price">R$45,50</span>
+            <button class="add-cart">Comprar</button>
+        </div>
+
+        <div class="box product-box shakes">
+            <img src="/img/shake-mora.jpg" alt="Whey protein Morango" class="product-img">
+            <h3 class="product-title">Whey protein/ Morango</h3>
+            <p class="product-p">1 pote c/900g</p>
+            <span class="price">R$45,50</span>
+            <button class="add-cart">Comprar</button>
+        </div>
+        
+        <div class="box product-box capsulas">
+           
+            <img src="/img/top mega azul.webp" alt="" class="product-img">
+            <h3 class="product-title">Top Mega 3,6,9 Azul</h3>
+            <p class="product-p">1 frasco c/120 caps. de 1000mg</p>
+           
+            <span class="price">R$57,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box capsulas">
+           
+            <img src="/img/AMORA MIURA.png" alt="" class="product-img">
+            <h3 class="product-title">Amora Miúra</h3>
+           <p class="product-p">1 frasco c/60 caps. de 500mg</p>
+            <span class="price">R$36,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box capsulas">
+          
+            <img src="/img/curcuma.webp" alt="" class="product-img">
+            <h3 class="product-title">Cúrcuma</h3>
+            <p class="product-p">1 frasco c/60 caps. de 500mg</p>
+            
+            <span class="price">R$32,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box capsulas">
+            
+            <img src="/img/chia.webp" alt="" class="product-img">
+            <h3 class="product-title">Chia</h3>
+            <p class="product-p">1 frasco c/60 caps. de 500mg</p>
+           
+            <span class="price">R$28,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box">
+          
+            <img src="/img/coffe energy.jpg" alt="" class="product-img">
+            <h3 class="product-title">Coffe Energy</h3>
+            <p class="product-p">1 frasco c/200g</p>
+            
+            <span class="price">R$44,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box chá">
+         
+            <img src="/img/cha verde-laranja.webp" alt="" class="product-img">
+            <h3 class="product-title">Chá Verde <br><span class="span">Sabor Laranja</span></h3>
+           <p class="product-p">1 frasco c/200g</p>
+            <span class="price">R$44,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box chá">
+           
+            <img src="/img/cha verde-limao.webp" alt="" class="product-img">
+            <h3 class="product-title">Chá Verde <br><span class="span-lemon">Sabor Limão</span></h3>
+            <p class="product-p">1 frasco c/200g</p>
+            <span class="price">R$44,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box chá">
+           
+            <img src="/img/cha verde-maracuja.webp" alt="" class="product-img">
+            <h3 class="product-title">Chá Verde <br><span class="span-mar">Sabor Maracujá</span></h3>
+            <p class="product-p">1 frasco c/200g</p>
+            <span class="price">R$44,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box capsulas">
+           
+            <img src="/img/VITAMINA C.webp" alt="" class="product-img">
+            <h3 class="product-title">Vitamina C</h3>
+           <p class="product-p">1 frasco c/60 caps. de 500mg</p>
+            <span class="price">R$32,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box capsulas">
+           
+            <img src="/img/VITAMINA COMPL B.jpg" alt="" class="product-img">
+            <h3 class="product-title">Vitamina Complexo B</h3>
+            <p class="product-p">1 frasco c/60 caps. de 500mg</p>
+           
+            <span class="price">R$34,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box capsulas">
+           
+            <img src="/img/fit caps.webp" alt="" class="product-img">
+            <h3 class="product-title">Fit Caps</h3>
+           <p class="product-p">1 frasco c/120 caps. de 500mg</p>
+            <span class="price">R$44,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box capsulas">
+           
+            <img src="/img/ÁCIDO HI.png" alt="" class="product-img">
+            <h3 class="product-title">Ácido Hialuronico</h3>
+            <p class="product-p">1 frasco c/60 caps. de 500 mg</p>
+           
+            <span class="price">R$32,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box capsulas">
+           
+            <img src="/img/MAGNESIO.webp" alt="" class="product-img">
+            <h3 class="product-title">Magnésio</span></h3>
+           <p class="product-p">1 frasco c/60 caps. de 500mg</p>
+            <span class="price">R$34,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box capsulas">
+           
+            <img src="/img/xylitol.jpg" alt="" class="product-img">
+            <h3 class="product-title">Xylitol</h3>
+            <p class="product-p">1 pote c/250mg</p>
+           
+            <span class="price">R$42,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+        <div class="box product-box capsulas">
+           
+            <img src="/img/resveratol.webp" alt="" class="product-img">
+            <h3 class="product-title">Resveratrol</h3>
+            <p class="product-p">1 frasco c/30ml</p>
+           
+            <span class="price">R$19,50</span>
+            <i class="add-cart">Comprar</i>
+        </div>
+       
+        
+    </div>
+
+ 
+</section>
+
+<script src="/arquivos/cart.js"></script>
+<script src="/arquivos/barra.js"></script>
+<script src="/arquivos/slide.js"></script>
+   </body>
+</html>
